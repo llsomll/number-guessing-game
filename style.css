@@ -1,68 +1,88 @@
 body {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .container {
-    border: 5px dashed black;
-    border-radius: 16px;
-    letter-spacing: 0.5px;
-    text-align: center;
-    padding: 20px;
-    width: 350px;
-    height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 5px dashed black;
+  border-radius: 16px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  padding: 20px;
+  width: 350px;
+  height: 450px;
 }
 
 h1 {
-    color: #ffd300;
-    letter-spacing: 1.5px;
-    font-size: 45px;
+  color: #ffd300;
+  letter-spacing: 1.5px;
+  font-size: 45px;
 }
 
-img {
-    width: 250px;
-}
-
-#result-area, #chance-area, #user-input, buttons {
-    margin-bottom: 20px; 
+#result-area,
+#chance-area,
+#user-input,
+buttons {
+  margin-bottom: 20px;
 }
 
 .input-area {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #user-input {
-    border-radius: 20px;
-    width: 200px;
-    height: 30px;
-    text-align: center;
-    border: 3px solid #ffd300;
+  border-radius: 20px;
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  border: 3px solid #ffd300;
 }
 
-
 button {
-    margin: 0 10px;
-    border: none;
-    border-radius: 20px;
-    width: 100px;
-    height: 35px;
-    text-align: center;
-    background-color: #ffd300;
-    color: white;
-    letter-spacing: 1.5px;
-    font-size: 13px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 20px;
+  width: 100px;
+  height: 35px;
+  text-align: center;
+  background-color: #ffd300;
+  color: white;
+  letter-spacing: 1.5px;
+  font-size: 13px;
 }
 
 button:hover {
-    transform: scale(1.1);
-    color: black;
-    cursor: pointer;
+  transform: scale(1.1);
+  color: black;
+  cursor: pointer;
 }
 
+img {
+  width: 200px;
+  animation: zoom-in-zoom-out 2s ease-out infinite;
+  margin-bottom: 30px;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
