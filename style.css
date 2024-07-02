@@ -26,6 +26,7 @@ h1 {
   color: #ffd300;
   letter-spacing: 1.5px;
   font-size: 45px;
+  text-align: center;
 }
 
 #result-area,
@@ -87,3 +88,18 @@ img {
     transform: scale(1, 1);
   }
 }
+
+@media screen and (max-width: 48rem) {
+    .h1 {
+      font-size: 10vw;
+    }
+
+    .container {
+        width: 300px;
+    }
+
+    #image {
+      width: 40vw;
+    }
+
+  }
