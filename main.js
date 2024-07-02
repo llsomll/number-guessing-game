@@ -19,6 +19,7 @@ let gameOver = false;
 let chanceArea = document.getElementById("chance-area");
 let history = [];
 let image = document.getElementById("image");
+let answerArea = document.getElementById("answer-area");
 
 playButton.addEventListener("click", play);
 resetButton.addEventListener("click", reset);
@@ -28,6 +29,7 @@ userInput.addEventListener("focus", function(){userInput.value=""});
 function pickRandomNum() {
     computerNum = Math.floor(Math.random()*30)+1;
     console.log("정답: ", computerNum);
+    answerArea.textContent = `The answer: ${computerNum}`;
 }
 
 pickRandomNum();

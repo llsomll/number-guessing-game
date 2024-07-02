@@ -19,7 +19,7 @@ body {
   text-align: center;
   padding: 20px;
   width: 350px;
-  height: 450px;
+  height: 480px;
 }
 
 h1 {
@@ -31,7 +31,8 @@ h1 {
 #result-area,
 #chance-area,
 #user-input,
-buttons {
+#answer-area,
+.buttons {
   margin-bottom: 20px;
 }
 
