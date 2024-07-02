@@ -18,7 +18,7 @@ let chances = 3;
 let gameOver = false;
 let chanceArea = document.getElementById("chance-area");
 let history = [];
-let questionMark = document.getElementById('question-mark');
+let image = document.getElementById("image");
 
 playButton.addEventListener("click", play);
 resetButton.addEventListener("click", reset);
@@ -59,7 +59,7 @@ function play() {
     } else {
         resultArea.textContent = "YOU GUESSED IT!!!"
         gameOver = true;
-        do_animation({ target: questionMark });
+        image.src = "assets/right.jpg";
     }
 
 
@@ -85,6 +85,7 @@ function reset() {
     gameOver = false;
     history = [];
     chanceArea.textContent = `Remaining chances: ${chances}`;
+    image.src = "assets/questionMark.jpg";
 }
 
 function do_animation(event) {
