@@ -6,6 +6,7 @@ body {
   align-items: center;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+    background-color: #f4f4f4;
 }
 
 .container {
@@ -20,6 +21,7 @@ body {
   padding: 20px;
   width: 350px;
   height: 480px;
+  background-color: white;
 }
 
 h1 {
